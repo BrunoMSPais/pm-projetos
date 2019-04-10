@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position:absolute;
+    background-color: #ecf0f1;
+    font-family: Arial;
+    align-content: center;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    color: darkgrey;
+    font-size: 16px;
+}
+    
+li{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    margin: 12px;
+    padding: 12px;
+    background-color: #9b59b6;
+    color: #FFFFFF;
+}

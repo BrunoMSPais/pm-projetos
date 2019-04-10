@@ -1,0 +1,78 @@
+body{
+    text-align: center;
+    background-color: #745CC1;
+    color: #FFFFFF;
+    font-family: 'roboto', sans-serif; 
+}
+img{
+    padding-top: 64px;
+}
+/*a instrução seguinte, foi a solução que encontrei para que, apesar de ter definido o alinhamento central, os inputs não se deslocassem para a esquerda da página*/
+.content{
+    width: 250px;
+    min-height: 300px;
+    margin: 0px auto;
+    position: relative;
+    
+}
+input{
+    margin-bottom: 50px; /*para deinir os espaçamentos*/
+    display: block; /*para definir a posição dos inputs sobrepostos*/
+    width: 247px; /*defenir tamanho do input*/
+    background-color: #745CC1; /*faz com que os inputs pareçam transparentes*/
+    /*definir o traço por baixo dos inputs*/
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    border-bottom: 1px solid #ffffff;
+    /*definir a letra dos inputs*/
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+}
+button{
+    height: 50px;
+    width: 247px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    color: #39393A;
+    text-transform: uppercase;
+}
+a{
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+form{
+    padding: 60px 0px 5px 0px;
+}
+/*pelo que entendi,após pesquisar, as instruções seguintes ajudam a que a formatação do texto dos inputs seja assumida pelos diferentes tipos de navegador*/
+::-webkit-input-placeholder{
+    color: #FFFFFF;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+::-moz-placeholder{
+    color: #FFFFFF;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+:-ms-input-placeholder{
+    color: #FFFFFF;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+:-moz-placeholder{
+    color: #FFFFFF;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
