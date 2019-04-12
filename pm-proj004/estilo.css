@@ -1,0 +1,53 @@
+/*apesar de ter o normalize.css referenciado no html a pagina estava a mostar as margens predefinidas*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    background-color: #4a4a4a;
+    margin-bottom: 3px;
+    background-image: url(arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    background-size: 15px;
+}
+
+li:hover {
+    background-color: #6e6e6e;  
+}
+
+li.done {
+    background-color: #27ae60;
+}
+
+li.done:hover {
+    background-color: #52be7f;    
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    background-image: url('done2.png');
+    background-repeat: no-repeat;
+    background-position: left 30px center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 150px;
+    line-height: 150px;
+    padding-left: 90px;
+    background-image: url(done.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+#undone{
+    background-image:  url(donecopy.png);
+    background-repeat: no-repeat;
+    background-size: 40px
+}
