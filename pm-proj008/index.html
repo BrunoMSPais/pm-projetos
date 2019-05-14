@@ -1,19 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
-    <head>
-       
-        <title>pm-proj008</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="normalize.css"/>
-        <link rel="stylesheet" type="text/css" href="estilo.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    
-    <body>
-        
-        
-        
-    </body>
+<head>
+    <title>pm-proj008</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <aside>
+
+        <h1><img src="nucliot-logo.png" alt=""></h1>
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a href="index.html">
+                        <span class="imagem"><img src="Balance.png" alt=""></span>
+                        Balance
+                        <span class="linha">$ 322</span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="index.html"><span class="imagem"><img src="Dashboard.png" alt=""></span>
+                        Dashboard</a>
+                </li>
+                <li class="menu">
+                    <a href="index.html">
+                        <span class="imagem"><img src="BaseStations.png" alt=""></span>
+                        Base Station
+                        <span class="linha">12</span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="index.html">
+                        <span class="imagem"><img src="my_projects.png" alt=""></span>
+                        My Projects
+                        <span class="linha">4</span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="">
+                        <span class="imagem"><img src="Settings.png" alt=""></span>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+        <header>
+            <h2>TD</h2>
+        </header>
+
+        <div id="marcador">
+            <ul>
+                <li><a href="index.html">ACCOUNT</a></li>
+                <li><a href="index.html">BILLING</a></li>
+            </ul>
+        </div>
+
+        <div id="cartao">
+
+            <form>
+                <h2>Personal information</h2>
+                <ul>
+                    <li class="ok">
+                        <input type="text" placeholder="Email" id="email">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</p>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="First name">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Last Name">
+                    </li>
+                    <li>
+                        <select>
+                            <option value="Brasil">Country</option>
+                            <option value="New Zealand">New Zealand</option>
+                        </select>
+                    </li>
+                    <li class="ok">
+                        <input type="text" placeholder="Phone" id="phone">
+                    </li>
+                </ul>
+            </form>
+            <form>
+                <h2>Password</h2>
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="New password">
+                <input type="text" placeholder="New password again">
+            </form>
+            <form class="checkbox">
+                <h2>Anythings</h2>
+                <input type="checkbox">
+                <label id="unchecked">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
+                <input type="checkbox" id="on">
+                <label id="checked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</label><br>
+                <input type="submit" value="SAVE" id="botao">
+            </form>
+
+        </div>
+
+    </section>
+</body>
+
 </html>
