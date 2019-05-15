@@ -1,0 +1,58 @@
+body {
+    font-family: 'AvenirLTStd-Medium', sans-serif;    
+    background-color: #f2f2f2;
+}
+
+.wrap {
+    margin: 0;
+    padding: 0;
+    width: 680px;
+    height: 551px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+
+.wrap header {
+    margin: 0;
+    padding: 0;
+    height: 41px;
+    background-color: #fff;
+}
+
+.wrap .checkout {
+    margin: 0;
+    padding: 0;
+    height: 510px;
+    display: flex;
+
+}
+
+.wrap .checkout .billing {
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    background-color: #fff;
+}
+
+.wrap .checkout .carrinho {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #fafafa;
+}
+
+.wrap .checkout .carrinho .items {
+    margin: 0;
+    padding: 0;
+    height: 428px;
+
+}
+
+.wrap .checkout .carrinho .valores {
+    margin: 0;
+    padding: 0;
+    height: 82px;
+
+}

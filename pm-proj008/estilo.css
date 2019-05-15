@@ -1,239 +1,195 @@
 body {
     display: flex;
-    font-family: 'arial', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
 aside {
-    background-color: #242536;
     width: 200px;
+    background-color: #242536;
 }
 
 aside h1 {
-    background-color: #151524;
+    background-image: url(nucliot-logo.png);
+    background-repeat: no-repeat;
     margin: 0;
     height: 60px;
-    text-align: center;
-    line-height: 60px;
-}
-
-aside nav ul li.menu {
-    height: 50px;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-aside nav ul li.menu a {
-    margin: 0;
-    padding: 0;
-    padding-left: 12px;
-    width: 200px;
-    height: 50px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 50px;
-}
-
-aside nav ul li.menu a:hover {
+    background-position: center center;
     background-color: #151524;
-    border-left: 4px solid #ffb946;
-    padding-left: 8px;
 }
 
-aside nav ul li.menu  a span.imagem {
-    float: left;
-    width: 15%;
+aside h1 span {
+    visibility: hidden;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    list-style: none;
     height: 50px;
     line-height: 50px;
-    margin: 0;
-}
-
-
-aside nav ul li.menu a span.linha{
-    margin: 0;
-    float: right;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
+    padding-left: 15px;
     font-size: 14px;
-    color: #fff;
-    opacity: 0.6;
+    font-weight: bold;
 }
-section {
-    background-color: #f2f2f2;
+
+aside li:hover {
+    background-color: #151524;
+    border-left: 3px solid #ffb946;
+    padding-left: 12px;
+}
+
+aside li i {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+aside li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside li small {
+    color: rgba(255, 255, 255, 0.60);
+    float: right;
+    margin-right: 15px;
+}
+
+section#principal {
     width: 100%;
 }
 
-section header {
+section#principal header {
+    height: 60px;
     background-color: #242536;
-    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
-section header h2 {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    margin-right: 15px;
-    padding-right: 5px;
+section#principal .modulo .abas {
     height: 60px;
-    text-align: right;
-    font-size: 14px;
-    line-height: 60px;
-    background-image: url(avatar.png);
-    background-repeat: no-repeat;
-    background-position: center right;
-}
-
-section div#marcador {
-    margin: 0;
-    padding: 0;
-    padding-left: 40px;
     background-color: #fff;
-    height: 60px;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.572067)
+    border-bottom: 1px solid #e6e6e6;
 }
 
-section div#marcador ul li{
-    padding: 0;
+section#principal .modulo .abas ul {
     margin: 0;
-    display: inline-flex;
-    height: 60px;
-    margin-right: 40px;
+    padding: 0;
+    margin-left: 50px;
+}
+
+section#principal .modulo .abas li {
+    display: inline-block;
     line-height: 60px;
-    font-weight: 700;
+}
+
+section#principal .modulo .abas li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #0f0f0f;
+    text-transform: uppercase;
     font-size: 14px;
-    color: #161616;
+    font-weight: bold;
+    display: inline-block;
 }
 
-section div#marcador ul li a:hover {
-    border-bottom: 2px solid #ffb946;
+section#principal .modulo .abas li a:hover {
     color: #ffb946;
+    box-shadow: 0px -3px 0px #ffb946 inset;
 }
 
-section div#cartao {
+section#principal .modulo .container {
+    padding: 20px;
+}
+
+section#principal .modulo .container .canvas {
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    height: 870px;
-    margin: 20px;
-    padding: 0;
+    padding: 20px;
 }
 
-section div#cartao form {
-    width: 430px;
+form ul {
     padding: 0;
-    padding-top: 37px;
-    padding-left: 32px;
     margin: 0;
+    margin-bottom: 30px;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 10px;
 }
 
 form h2 {
+    font-size: 20px;
+    color: #161616;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
-    color: #161616;
-    font-weight: bold;
-    font-size: 20px;
+    margin-bottom: 20px;
 }
-
 form input, form select {
-    display: block;
-    box-sizing: border-box;
     width: 400px;
     height: 40px;
-    color: #c5c5c5;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-    padding-left: 14px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;  
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+form small {
+    display: block;
+    width: 400px;
+    margin-top: 5px;
+    text-shadow: 0px 4px 4px rba(0, 0, 0, 0.25);
 }
 
 form select {
     color: #c5c5c5;
 }
 
+
 ::-webkit-input-placeholder {
     color: #c5c5c5;
 }
 
-p {
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    margin-top: -5px;
-    margin-bottom: 26px;
-    font-size: 12px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}
-
-
-form.checkbox input {
-    width:16px;
-    height: 16px;
-    display: inline-block;
-}
-
-
-form label {
-    display: inline-flex;
-    width: 80%;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-form label#unchecked {
-    color: #161616;
-}
-
-
-form.checkbox input#botao {
-    background-color: #3aca60;
-    color: #fff;
-    width: 400px;
-    height: 40px;
-    border-radius: 4px;
-    margin: 0;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 35px;
-}
-
-form ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-form ul li {
-    padding: 0;
-    margin: 0;
-    width: 450px;
-}
-
-li.ok {
+form li.ok {
     background-image: url(ok.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: top 10px right;
+    width: 430px;
 }
 
-li.ok:first-child {
-    background-position: top 12px right;
+form button {
+    width: 400px;
+    height: 40px;
+    background-color: #3aca60;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.confirmacoes li {
+    font-size: 14px;
+    display: flex;
+    width: 400px;
+}
+
+.confirmacoes label {
+    width: 365px;
+}
+
+.confirmacoes input {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }

@@ -1,111 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
+
     <title>pm-proj008</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 </head>
+
+
 
 <body>
     <aside>
+        <h1><span>Nucliot</span></h1>
 
-        <h1><img src="nucliot-logo.png" alt=""></h1>
         <nav>
             <ul>
-                <li class="menu">
-                    <a href="index.html">
-                        <span class="imagem"><img src="Balance.png" alt=""></span>
-                        Balance
-                        <span class="linha">$ 322</span>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Balance</span>
+                        <small>$ 323</small>
                     </a>
                 </li>
-                <li class="menu">
-                    <a href="index.html"><span class="imagem"><img src="Dashboard.png" alt=""></span>
-                        Dashboard</a>
-                </li>
-                <li class="menu">
-                    <a href="index.html">
-                        <span class="imagem"><img src="BaseStations.png" alt=""></span>
-                        Base Station
-                        <span class="linha">12</span>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-area"></i>
+                        <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="menu">
-                    <a href="index.html">
-                        <span class="imagem"><img src="my_projects.png" alt=""></span>
-                        My Projects
-                        <span class="linha">4</span>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-signal"></i>
+                        <span>Base Stations</span>
+                        <small>12</small>
                     </a>
                 </li>
-                <li class="menu">
-                    <a href="">
-                        <span class="imagem"><img src="Settings.png" alt=""></span>
-                        Settings
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cubes"></i>
+                        <span>My Projects</span>
+                        <small>4</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </aside>
 
-    <section>
+
+    <section id="principal">
         <header>
-            <h2>TD</h2>
+            <a href="#">
+                <img src="TD.png">
+            </a>
         </header>
+        <div class="modulo">
 
-        <div id="marcador">
-            <ul>
-                <li><a href="index.html">ACCOUNT</a></li>
-                <li><a href="index.html">BILLING</a></li>
-            </ul>
-        </div>
-
-        <div id="cartao">
-
-            <form>
-                <h2>Personal information</h2>
+            <div class="abas">
                 <ul>
-                    <li class="ok">
-                        <input type="text" placeholder="Email" id="email">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</p>
-                    </li>
-                    <li>
-                        <input type="text" placeholder="First name">
-                    </li>
-                    <li>
-                        <input type="text" placeholder="Last Name">
-                    </li>
-                    <li>
-                        <select>
-                            <option value="Brasil">Country</option>
-                            <option value="New Zealand">New Zealand</option>
-                        </select>
-                    </li>
-                    <li class="ok">
-                        <input type="text" placeholder="Phone" id="phone">
-                    </li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Billing</a></li>
                 </ul>
-            </form>
-            <form>
-                <h2>Password</h2>
-                <input type="text" placeholder="Password">
-                <input type="text" placeholder="New password">
-                <input type="text" placeholder="New password again">
-            </form>
-            <form class="checkbox">
-                <h2>Anythings</h2>
-                <input type="checkbox">
-                <label id="unchecked">Güncelleme ve yenilikleri mail olarak almak istiyorum.</label><br>
-                <input type="checkbox" id="on">
-                <label id="checked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</label><br>
-                <input type="submit" value="SAVE" id="botao">
-            </form>
+            </div>
 
+            <div class="container">
+                <div class="canvas">
+                    <form action="">
+                        <h2>Personal information</h2>
+                        <ul>
+                            <li class="ok">
+                                <input type="text" placeholder="Email">
+                                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</small>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="First name">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="Last name">
+                            </li>
+                            <li>
+                                <select>
+                                    <option value="Country">Country</option>
+                                    <option value="Country">New Zealand</option>
+                                </select>
+                            </li>
+                            <li class="ok">
+                                <input type="text" placeholder="Phone">
+                            </li>
+                        </ul>
+
+                        <h2>Password</h2>
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="Password">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="New password">
+                            </li>
+                            <li>
+                                <input type="text" placeholder="New password again">
+                            </li>
+                        </ul>
+
+                        <h2>Anythings</h2>
+                        <ul class="confirmacoes">
+                            <li>
+                                <input type="checkbox">
+                                <label>Güncelleme ve yenilikleri mail olarak almak istiyorum.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</label>
+                            </li>
+                        </ul>
+
+                        <button>Save</button>
+
+                    </form>
+                </div>
+            </div>
         </div>
-
     </section>
+
+
 </body>
 
 </html>
