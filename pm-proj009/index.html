@@ -8,33 +8,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <link rel="stylesheet" type="text/css" href="fonts/AvenirLTStd-Medium.otf" />
+    <link href="fonts/stylesheet.css" rel="stylesheet">
 
 </head>
 
 
 <body>
-    <div class="wrap">
+    <div class="bg-img"></div>
+    <div class="principal">
         <header>
-            <h1></h1>
-            <h2></h2>
-            <a href="#"><img src=""></a>
+            <div class="cabecalho">
+                <h1>Checkout</h1>
+                <h2>Shipping > <strong>Payment Method</strong> > Confirmation</h2>
+            </div>
+            <a href="#"><img src="img/close.png"></a>
         </header>
         <div class="checkout">
 
-            <div class="billing">
+            <div class="pagamento">
+                <h2>Wallet</h2>
+
+                <ul class="cartoes">
+                    <li id="visa">
+                        <label>Ending in 1234</label>
+                    </li>
+                    <li id="master">
+                        <label>Ending in 2222</label>
+                    </li>
+                    <li id="discover">
+                        <label>Ending in 1111</label>
+                    </li>
+                </ul>
+
+                <h2>New Card</h2>
+
+                <hr>
+
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Name on card">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="1111-1111-1111-1112">
+                        </li>
+                        <li id="validade">
+                            <input type="text" placeholder="MM/YY" id="data">
+                            <input type="text" placeholder="CVC" id="cvc">
+                        </li>
+                        <li id="checkbox">
+                            <input type="checkbox">
+                            <label>Add card to wallet</label>
+                        </li>
+                    </ul>
+                    <button>Continue</button>
+                </form>
 
             </div>
 
             <div class="carrinho">
                 <div class="items">
-
+                    <ul>
+                        <li>
+                            <img src="img/boot.png">
+                            <div>
+                                <h3>The Chelsea Boot</h3>
+                                <small>Black</small>
+                                <p><b>Quantity:</b> 1</p>
+                            </div>
+                            <span>$235</span>
+                        </li>
+                        <li>
+                            <img src="img/backpack.png">
+                            <div>
+                                <h3>The Twill Snap Backpack</h3>
+                                <small>Reverse Denim + Brown leather</small>
+                                <p><b>Quantity:</b> 1</p>
+                            </div>
+                            <span>$65</span>
+                        </li>
+                        <li>
+                            <img src="img/tote.png">
+                            <div>
+                                <h3>The Twill Zip Tote</h3>
+                                <small>Reverse Denim + Black leather</small>
+                                <p><b>Quantity:</b> 1</p>
+                            </div>
+                            <span>$48</span>
+                        </li>
+                        <li>
+                            <img src="img/scarf.png">
+                            <div>
+                                <h3>The Chunky Wool Scarf</h3>
+                                <small>Black</small>
+                                <p><b>Quantity:</b> 1</p>
+                            </div>
+                            <span>$50</span>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="valores">
-
+                    <ul>
+                        <li>
+                            <div>Subtotal</div><span>$398</span>
+                        </li>
+                        <li>
+                            <div>Shippin</div><span>Free</span>
+                        </li>
+                        <li>
+                            <div>Taxes</div><span>12.12</span>
+                        </li>
+                        <li>
+                            <div>Total</div><span>$410.12</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
