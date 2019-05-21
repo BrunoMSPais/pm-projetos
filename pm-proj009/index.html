@@ -1,131 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-
-    <title>pm-proj009</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <link href="fonts/stylesheet.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <title>projeto 009</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/principal.css">
 </head>
 
-
 <body>
-    <div class="bg-img"></div>
-    <div class="principal">
+
+    <div class="checkout">
         <header>
-            <div class="cabecalho">
+            <div>
                 <h1>Checkout</h1>
-                <h2>Shipping > <strong>Payment Method</strong> > Confirmation</h2>
+                <span>Shipping> <strong>Payment Method</strong> > Confirmation</span>
             </div>
-            <a href="#"><img src="img/close.png"></a>
+            <a href="#"><span>Fechar</span></a>
         </header>
-        <div class="checkout">
+        <main>
+            <div class="cartao">
+                <div class="wallet">
+                    <h2>Wallet</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/visa.png">
+                                <small>Ending in 1234</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/Mastercard%20card.png">
+                                <small>Ending in 2222</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/discover.png">
+                                <small>Ending in 1111</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="pagamento">
-                <h2>Wallet</h2>
+                <div class="newCard">
+                    <form action="">
+                        <fieldset>
 
-                <ul class="cartoes">
-                    <li id="visa">
-                        <label>Ending in 1234</label>
+                            <legend>New Card</legend>
+
+                            <input type="text" placeholder="Name on card">
+                            <input type="text" placeholder="1111-1111-1111-1112">
+                            <br>
+                            <input type="text" class="data" placeholder="MM/YY">
+
+                            <input type="text" class="cvc" placeholder="CVC">
+                            <br>
+                            <label for="addWallet">
+                                <input type="checkbox" class="checkbox" name="addWallet">
+                                Add card to wallet</label>
+
+                            <button>Continue</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+            <div class="resumos">
+                <ul class="produtos">
+                    <li>
+                        <img src="img/boot.png">
+                        <div class="detalhes">
+                            <h3>The chelsea Boot</h3>
+                            <small>Black</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$235</span>
                     </li>
-                    <li id="master">
-                        <label>Ending in 2222</label>
+                    <li>
+                        <img src="img/backpack.png">
+                        <div class="detalhes">
+                            <h3>The Twill Snap Backpack</h3>
+                            <small>Reverse Denim + Brown leather</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$65</span>
                     </li>
-                    <li id="discover">
-                        <label>Ending in 1111</label>
+                    <li>
+                        <img src="img/tote.png">
+                        <div class="detalhes">
+                            <h3>The Twill Zip Tote</h3>
+                            <small>Reverse Denim + Black leather</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$48</span>
+                    </li>
+                    <li>
+                        <img src="img/scarf.png">
+                        <div class="detalhes">
+                            <h3>The Chunky Wool Scarf</h3>
+                            <small>Black</small>
+                            <span>Quantity: 1</span>
+                        </div>
+                        <span class="preco">$50</span>
                     </li>
                 </ul>
 
-                <h2>New Card</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Subtotal</th>
+                            <td>$398</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shipping</th>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Taxes</th>
+                            <td>12.12</td>
+                        </tr>
+                    </tbody>
 
-                <hr>
-
-                <form>
-                    <ul>
-                        <li>
-                            <input type="text" placeholder="Name on card">
-                        </li>
-                        <li>
-                            <input type="text" placeholder="1111-1111-1111-1112">
-                        </li>
-                        <li id="validade">
-                            <input type="text" placeholder="MM/YY" id="data">
-                            <input type="text" placeholder="CVC" id="cvc">
-                        </li>
-                        <li id="checkbox">
-                            <input type="checkbox">
-                            <label>Add card to wallet</label>
-                        </li>
-                    </ul>
-                    <button>Continue</button>
-                </form>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td>$410.12</td>
+                        </tr>
+                    </tfoot>
+                </table>
 
             </div>
-
-            <div class="carrinho">
-                <div class="items">
-                    <ul>
-                        <li>
-                            <img src="img/boot.png">
-                            <div>
-                                <h3>The Chelsea Boot</h3>
-                                <small>Black</small>
-                                <p><b>Quantity:</b> 1</p>
-                            </div>
-                            <span>$235</span>
-                        </li>
-                        <li>
-                            <img src="img/backpack.png">
-                            <div>
-                                <h3>The Twill Snap Backpack</h3>
-                                <small>Reverse Denim + Brown leather</small>
-                                <p><b>Quantity:</b> 1</p>
-                            </div>
-                            <span>$65</span>
-                        </li>
-                        <li>
-                            <img src="img/tote.png">
-                            <div>
-                                <h3>The Twill Zip Tote</h3>
-                                <small>Reverse Denim + Black leather</small>
-                                <p><b>Quantity:</b> 1</p>
-                            </div>
-                            <span>$48</span>
-                        </li>
-                        <li>
-                            <img src="img/scarf.png">
-                            <div>
-                                <h3>The Chunky Wool Scarf</h3>
-                                <small>Black</small>
-                                <p><b>Quantity:</b> 1</p>
-                            </div>
-                            <span>$50</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="valores">
-                    <ul>
-                        <li>
-                            <div>Subtotal</div><span>$398</span>
-                        </li>
-                        <li>
-                            <div>Shippin</div><span>Free</span>
-                        </li>
-                        <li>
-                            <div>Taxes</div><span>12.12</span>
-                        </li>
-                        <li>
-                            <div>Total</div><span>$410.12</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </main>
     </div>
-
 </body>
+
+</html>
