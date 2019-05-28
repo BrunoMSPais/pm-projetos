@@ -1,0 +1,85 @@
+main {
+    margin: 0;
+    padding: 50px;
+    background-color: #fff;
+}
+
+main p {
+    font-size: 15px;
+    color: #666;
+}
+
+main .resumo p {
+    margin-top: 13px;
+}
+
+main .card {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+main .resumo,
+.columns main .card {
+    margin-bottom: 50px;
+}
+
+main header {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    color: #d0021b;
+    border-bottom: 1px solid #d0021b;
+    display: flex;
+}
+
+main header i {
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    font-size: 18px;
+}
+
+main header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 10px;
+    line-height: 18px;
+}
+
+main .card .conteudo {
+    border: 0;
+    padding: 0;
+    display: flex;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+main .card .conteudo .dados {
+    width: 30%;
+    display: block;
+    color: #3a3c40;
+}
+
+main .card .conteudo .dados h3 {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+main .card .conteudo .dados span {
+    font-size: 15px;
+}
+
+main .card .conteudo .dados small {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+main .card .conteudo p {
+    width: 70%;
+    margin-left: 15px;
+}

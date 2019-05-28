@@ -1,0 +1,29 @@
+@import url(aside.css);
+@import url(main.css);
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f8f9;
+}
+
+.columns {
+    margin: auto;
+    width: 900px;
+    display: flex;
+    border: 1px solid #f2f2f2;
+}
+
+img,
+h1,
+h2,
+h3,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.column.is-8 {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 40px;
+}

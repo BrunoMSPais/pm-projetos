@@ -1,0 +1,94 @@
+aside {
+    margin: 0;
+    padding: 0;
+    background-color: #3a3c40;
+    text-align: center;
+    color: #fff;
+}
+
+aside img {
+    width: 140px;
+    height: 140px;
+    margin-top: 32px;
+    border-radius: 3px;
+}
+
+aside h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f5a623;
+    margin-top: 16px;
+}
+
+aside h2 {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+aside .button.is-large {
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    width: 140px;
+    height: 47px;
+    color: #fff;
+    background-color: #f5a623;
+    border-radius: 3px;
+    box-shadow: 0px 4px 0px rgba(245, 166, 35, 0.6);
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+aside ul.social {
+    align-items: flex-end;
+    width: 100%;
+}
+
+aside ul.social li {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    margin-top: 19px;
+}
+
+aside ul.social li:first-child {
+    margin-right: 25px;
+}
+
+aside ul.social li:last-child {
+    margin-left: 25px;
+}
+
+aside ul.social li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+aside ul.progresso {
+    padding: 40px;
+    text-align: left;
+    list-style: none;
+}
+
+aside ul.progresso h3 {
+    margin-top: 39px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #eee;
+}
+
+aside ul.progresso label {
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+    font-size: 12px;
+    color: #8fa4af;
+}
+
+aside .progress.is-warning::-webkit-progress-value {
+    background-color: #f5a623;
+}
