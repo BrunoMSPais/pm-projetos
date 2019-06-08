@@ -3,111 +3,103 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>projeto 010</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/principal.css">
 </head>
 
-
 <body>
-    <div class="columns">
-        <aside class="column is-4">
-            <img src="img/avatar.png">
-            <h1>Bruno Pais</h1>
-            <h2>Frontend Developer</h2>
-            <a class="button is-large" href="https://github.com/BrunoMSPais/pm-projetos">PORTFÓLIO</a>
-            <ul class="social">
-                <li>
-                    <a href="https://www.linkedin.com/in/bruno-pais-51a9a4186"><i class="fab fa-linkedin"></i></a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/BrunoMSPais"><i class="fab fa-github"></i></a>
-                </li>
-
-                <li>
-                    <a href="https://www.facebook.com/BrunoMSPais"><i class="fab fa-facebook-square"></i></a>
-                </li>
-            </ul>
-            <ul class="progresso">
-                <h3>Conhecimento</h3>
-                <li>
-                    <label>HTML e CSS</label>
-                    <progress class="progress is-small is-warning" value="50" max="100">50%</progress>
-                </li>
-                <li>
-                    <label>Javascript</label>
-                    <progress class="progress is-small is-warning" value="50" max="100">50%</progress>
-                </li>
-                <li>
-                    <label>Ruby on Rails</label>
-                    <progress class="progress is-small is-warning" value="50" max="100">50%</progress>
-                </li>
-                <li>
-                    <label>PHP</label>
-                    <progress class="progress is-small is-warning" value="50" max="100">50%</progress>
-                </li>
-                <li>
-                    <label>Design de Interação</label>
-                    <progress class="progress is-small is-warning" value="50" max="100">50%</progress>
-                </li>
-            </ul>
-        </aside>
-
-        <main class="column is-8">
-            <div class="resumo">
-                <header>
-                    <i class="fas fa-file-alt"></i>
-                    <h2>Resumo</h2>
-                </header>
-                <p>
-                    Sou motorista de serviço público na empresa onde trabalho. Recentemente comecei a formação em programação (HTML, CSS, Javascript e Banco de Dados) com intuito de, no futuro, obter rendimentos extra, como freelancer ou colaborador em part-time, talvez como futura carreira.
-                </p>
-                <p>
-                    Hello. I am, currently, a bus driver at my current employer.
-                    Recently I've started my formation in It and programing (HTML, CSS, Javascript and Data banks) with the intuit of gaining, for now, extra income, as a freelance or part-time collaboration. However I do hope for a career change, and if given the opportunity I will certainly take it.
-                </p>
-            </div>
-            <div class="card">
-                <header>
-                    <i class="fas fa-briefcase"></i>
-                    <h2>Experiência</h2>
-                </header>
-                <div class="conteudo">
-                    <div class="dados">
-                        <h3>Motorista de Autocarro / Bus Driver</h3>
-                        <span>CCFL - Companhia Carris de Ferro de Lisboa</span>
-                        <small>Junho de 2007 - até ao momento / June 2007 - until now</small>
-                    </div>
-                    <p>Transporte colectivo, urbano de passageiros.
-                        <br>
-                        <br>
-                        Collective urban passenger transport.</p>
+    <div class="container">
+        <div class="columns">
+            <aside class="column is-4">
+                <img src="img/avatar.png">
+                <h1>Bruno Pais</h1>
+                <h2>Frontend Developer</h2>
+                <a class="button is-info is-large" href="https://github.com/BrunoMSPais/pm-projetos">Portfólio</a>
+                <ul class="redes-sociais">
+                    <li>
+                        <a href="https://github.com/BrunoMSPais">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/bruno-pais-51a9a4186">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/BrunoMSPais">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="habilidades">
+                    <h3>Conhecimento</h3>
+                    <ul>
+                        <li>
+                            <small>HTML CSS</small>
+                            <progress class="progress is-danger is-small" value="50" max="100">50%</progress>
+                        </li>
+                        <li>
+                            <small>Javascript</small>
+                            <progress class="progress is-danger is-small" value="50" max="100">50%</progress>
+                        </li>
+                        <li>
+                            <small>PHP</small>
+                            <progress class="progress is-danger is-small" value="50" max="100">50%</progress>
+                        </li>
+                        <li>
+                            <small>Design de interação</small>
+                            <progress class="progress is-danger is-small" value="50" max="100">50%</progress>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </aside>
+            <article class="column is-8">
+                <div class="content">
+                    <h3><i class="fas fa-file" id="icon"></i>Resumo</h3>
+                    <p> Sou motorista de serviço público na empresa onde trabalho. Recentemente comecei a formação em programação (HTML, CSS, Javascript e Banco de Dados) com intuito de, no futuro, obter rendimentos extra, como freelancer ou colaborador em part-time, talvez como futura carreira.
+                    </p>
+                    <p>Hello. I am, currently, a bus driver at my current employer.
+                        Recently I've started my formation in It and programing (HTML, CSS, Javascript and Data banks) with the intuit of gaining, for now, extra income, as a freelance or part-time collaboration. However I do hope for a career change, and if given the opportunity I will certainly take it.</p>
+                    <h3><i class="fas fa-briefcase" id="icon"></i>Experiência</h3>
+                    <div class="instituicao columns">
+                        <div class="column is-4">
+                            <h4>Motorista de Autocarro / Bus Driver</h4>
+                            <h5>CCFL - Companhia Carris de Ferro de Lisboa</h5>
+                            <small>Junho de 2007 - até ao momento / June 2007 - until now</small>
 
-            <div class="card">
-                <header>
-                    <i class="fas fa-trophy"></i>
-                    <h2>Formação</h2>
-                </header>
-                <div class="conteudo">
-                    <div class="dados">
-                        <h3>Formando / Trainee</h3>
-                        <span>Playcode</span>
-                        <small>Fevereiro de 2019 - até ao momento / February 2019 - until now</small>
+                        </div>
+                        <div class="column">
+                            <p>Transporte colectivo, urbano de passageiros.
+                                <br>
+                                <br>
+                                Collective urban passenger transport.</p>
+                        </div>
                     </div>
-                    <p>Currentemente a proceder à formação, em estilo mentoria, no projeto Playcode Makers, que ingloba HTML, CSS, Jvascript, PHP e Design de Interação (IxD).<br>
-                    <br>
-                    In the course of training, in a mentoring style, in the project Playcode Makers, which includes HTML, CSS, Jvascript, PHP and Interaction Design (IxD).</p>
-                </div>
 
-            </div>
-        </main>
+                    <h3><i class="fas fa-trophy" id="icon"></i>Formaçao</h3>
+                    <div class="instituicao columns">
+                        <div class="column is-4">
+                            <h4>Formando / Trainee</h4>
+                            <h5>Playcode</h5>
+                            <small>Fevereiro de 2019 - até ao momento / February 2019 - until now</small>
+
+                        </div>
+                        <div class="column">
+                            <p>Currentemente a proceder à formação, em estilo mentoria, no projeto Playcode Makers, que ingloba HTML, CSS, Jvascript, PHP e Design de Interação (IxD).
+                                <br>
+                                <br>
+                                In the course of training, in a mentoring style, in the project Playcode Makers, which includes HTML, CSS, Jvascript, PHP and Interaction Design (IxD).</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
 </body>
 
