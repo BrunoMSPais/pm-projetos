@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,28 +8,33 @@
     <title>projeto011</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="tamanho">
-        <h2>altura em metros</h2>
-        <input type="number" class="altura" required placeholder="1.87" min="0" max="3" step="0.01" onchange="habilitaBtn()">
-    </div>
-    <div class="massa">
-        <h2>peso em quilos</h2>
-        <input type="number" class="peso" required placeholder="98.4" min="0" max="400" step="0.1" onchange="habilitaBtn()">
-    </div>
-    <div class="imc">
-        <div class="fundo">
-            <a href="index.html"><img src="img/arrow_left.png"></a>
-            <div class="resultado">
-                <p class="valor"></p>
-                <small class="texto"></small>
+    <div class="container">
+        <div class="dados">
+            <div class="altura">
+                <label>Altura em metros</label>
+                <input id="altura" name="altura" type="number" placeholder="1,72" min="1" max="3" step="0.01" required="required">
+            </div>
+            <div class="peso">
+                <label>Peso em quilos</label>
+                <input id="peso" name="peso" type="number" placeholder="75,4" min="2" max="400" step="0.1" required="required">
             </div>
         </div>
-        <button id="imc" disabled="disabled" class="btn" type="submit">imc</button>
+        <div class="interativo">
+            <button type="button" id="btn" onclick="validarBtn()">imc</button> <!-- onclick faz referencia à função validarBtn() declarada no JavaScript -->
+            <div class="fundo">
+                <a href="index.html"><img src="img/arrow_left.png"></a>  <!-- recarrega a página para voltar a mostrar o botão imc e os inputs limpos -->
+                
+                <div class="resultado">
+                    <span></span>
+                    <small></small>
+                </div>
+            </div>
+        </div>
     </div>
-
     <script src="JS/comportamento.js"></script>
 </body>
 
